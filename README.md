@@ -1,2 +1,2 @@
-# python-flask-practice
-An educational project focusing on refactoring a node.js backend into python/flask
+# Python Newsfeed
+Code refactor of a Node.js powered social news site into Python
