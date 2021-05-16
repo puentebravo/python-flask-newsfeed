@@ -1,4 +1,5 @@
 from flask import Flask
+from app.routes import home
 
 def create_app(test_config=None):
     #This sets up application configuration
@@ -10,5 +11,8 @@ def create_app(test_config=None):
     @app.route("/hello")
     def hello():
         return "Is this thing on?"
+    
+    #This registers routes
+    app.register_blueprint(home)
 
     return app
