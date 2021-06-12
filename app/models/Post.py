@@ -12,4 +12,5 @@ class Post(Base):
     created_at = Column(DateTime, default=datetime.now)
     updated_at = Column(DateTime, default=datetime.now)
     user = relationship("User")
+    comments = relationship("Comment", cascade="all,delete")
 
